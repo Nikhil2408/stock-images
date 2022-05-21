@@ -1,0 +1,13 @@
+.ImagesList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.loading{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: brown;
+}

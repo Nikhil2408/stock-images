@@ -43,9 +43,9 @@ function ImagesList(props){
 
     useEffect(() => {
 
-        function fetchImages(){
-            if((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
-                console.log("hey");
+        function fetchImages(e){
+            if((window.innerHeight + e.target.documentElement.scrollTop) >=
+                e.target.documentElement.scrollHeight){
                 getImages(pageNum);
             }
         }
